@@ -1,0 +1,37 @@
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+<https://raw.githubusercontent.com/keremkubur/LinkedData-FOAF/main/foaf.ttl>
+        a                     foaf:PersonalProfileDocument ;
+        admin:errorReportsTo  <mailto:leigh@ldodds.com> ;
+        admin:generatorAgent  <http://www.ldodds.com/foaf/foaf-a-matic> ;
+        foaf:maker            <https://raw.githubusercontent.com/keremkubur/LinkedData-FOAF/main/foaf.ttl#me> ;
+        foaf:primaryTopic     <https://raw.githubusercontent.com/keremkubur/LinkedData-FOAF/main/foaf.ttl#me> .
+
+<https://raw.githubusercontent.com/keremkubur/LinkedData-FOAF/main/foaf.ttl#me>
+        a                       foaf:Person ;
+        foaf:family_name        "Kubur" ;
+        foaf:givenname          "Kerem" ;
+        foaf:knows              [ a                  foaf:Person ;
+                                  rdfs:seeAlso       <https://www.facebook.com/demet.memis> ;
+                                  foaf:mbox_sha1sum  "e2712af802568baf1a7edf110545f98bd917516a" ;
+                                  foaf:name          "Demet Memis"
+                                ] ;
+        foaf:knows              [ a                  foaf:Person ;
+                                  rdfs:seeAlso       <https://www.facebook.com/sreten.jevtic> ;
+                                  foaf:mbox_sha1sum  "c9ac43f203b3f76dfbae912dd10ed874068a5a8c" ;
+                                  foaf:name          "Sreten Jevtic"
+                                ] ;
+        foaf:knows              [ a                  foaf:Person ;
+                                  rdfs:seeAlso       <https://www.facebook.com/profile.php?id=100010272125924> ;
+                                  foaf:mbox_sha1sum  "25112d6737cbd508664faba566f6bc72cb209d17" ;
+                                  foaf:name          "Ece Ibraim"
+                                ] ;
+        foaf:mbox_sha1sum       "6ce8d1608bdc2893cbf5ad76f2fea47491c02b9c" ;
+        foaf:name               "Kerem Kubur" ;
+        foaf:phone              <tel:+38970833842> ;
+        foaf:schoolHomepage     <https://www.finki.ukim.mk/> ;
+        foaf:workInfoHomepage   <https://www.rasmussen.edu/degrees/technology/blog/what-does-software-developer-do/> ;
+        foaf:workplaceHomepage  <https://see.asseco.com/> .
